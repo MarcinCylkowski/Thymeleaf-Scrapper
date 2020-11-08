@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>SCRRAPER HANDLER</title>
+    <link href="../static/main.css" th:href="@{/main.css}" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="table-head">SCRRAPER HANDLER</div>
+<table border="1" >
+    <tr>
+        <th>Nazwa</th>
+        <th>Status</th>
+        <th>Last Run at</th>
+        <th>Restart</th>
+    </tr>
+    <tr th:each="obj: ${list}">
+        <td th:text="${obj.getName()}"></td>
+        <td th:text="${obj.getStatus()}"></td>
+        <td th:text="${obj.getLastRun()}"></td>
+        <td><button>RESTART</button></td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
