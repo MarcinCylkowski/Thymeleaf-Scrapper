@@ -1,11 +1,8 @@
 package com.example.demo.model;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-@Setter
 public class ScrapperHandler {
 
     private String name;
@@ -18,9 +15,6 @@ public class ScrapperHandler {
         this.status = status;
         this.lastRun = lastRun;
         this.restartHandler = restartHandler;
-    }
-
-    public ScrapperHandler() {
     }
 }
 
